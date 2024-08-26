@@ -11,7 +11,7 @@ document.body.appendChild(div);
 // Create a <link> element for the CSS
 const link = document.createElement('link');
 link.rel = 'stylesheet';
-link.href = '/style.css'; // Path to your CSS file
+link.href = '../simple/style.css'; // Path to your CSS file
 
 document.head.appendChild(link);
 
