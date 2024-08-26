@@ -1,4 +1,4 @@
-
+ 
 // Create a new div element
 const div = document.createElement('div');
 
