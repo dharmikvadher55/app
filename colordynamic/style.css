@@ -27,7 +27,7 @@
       
 }
 
-.container {max-height:100px;
+#json-container {max-height:100px;
 border-radius:12px;
   width: auto;
   display: inline-flex;
@@ -37,14 +37,14 @@ border-radius:12px;
   background-color: var(--bg-100); /* Set container background */
 }
 
-.section {
+#json-container .section {
   margin-bottom: 30px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Softer shadow */
   border-radius: 8px;
   background-color: var(--bg-200); /* Section background */
 }
 
-.section h2 {
+#json-container .section h2 {
   margin: 0;
   padding: 16px 20px;
   cursor: pointer;
@@ -57,65 +57,65 @@ border-radius:12px;
   white-space: nowrap;
 }
 
-.section h2:hover {
+#json-container .section h2:hover {
   background-color: var(--accent-200);
   color: var(--bg-100); /* White text on hover */
 }
 
-table {
+#json-container table {
   width: 100%;
   border-collapse: collapse;
   margin: 0;
   color: var(--text-100);
 }
 
-th, td {
+#json-container th,#json-container  td {
   border: 1px solid var(--bg-300); /* Light gray border */
   padding: 12px 16px;
   text-align: left;
 }
 
-th {
+#json-container th {
   background-color: var(--primary-200); /* Medium blue header */
   font-weight: 600;
   color: var(--text-100);
 }
 
-.nested-table {
+#json-container .nested-table {
   margin-left: 30px;
 }
 
-.array-list {
+#json-container .array-list {
   margin: 10px 0;
   padding-left: 20px;
   list-style-type: none;
   color: var(--text-100);
 }
 
-.array-list li {
+#json-container .array-list li {
   margin-bottom: 5px;
 }
 
-.collapse-content {
+#json-container .collapse-content {
   display: none;
   transition: all 0.3s ease;
 }
 
-.collapse-content.visible {
+#json-container .collapse-content.visible {
   display: block;
 }
 
-.collapsed::before, .expanded::before {
+#json-container .collapsed::before, .expanded::before {
   margin-right: 5px;
   color: var(--accent-100); /* Deep blue for icons */
 }
 
-.collapsed::before {
+#json-container .collapsed::before {
   content: "▶ ";
   font-size: 12px;
 }
 
-.expanded::before {
+#json-container .expanded::before {
   content: "▼ ";
   font-size: 12px;
   }
