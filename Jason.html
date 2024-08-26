@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Table Display</title>
+    
+    <style>
+        hr {
+            border: 1px solid #ccc; /* Light gray color */
+            margin: 20px 0; /* Spacing above and below the line */
+        }
+        #textarea {
+            max-height:100px;
+border-radius:12px;
+  width: auto;
+  display: inline-flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg-100); /* Set container background */
+        }
+    </style>
+</head>
+<body>
+    <textarea id="textArea" rows="10" cols="37" placeholder="Enter JSON text here..."></textarea>
+    <button id="convertButton">Convert to JSON</button>
+    <!-- The div where the JSON data will be displayed --><hr>
+    <div id="json-container" class="container"></div>
+    <!-- The area where error messages will be displayed -->
+    <pre id="output"></pre> 
+    <!-- Import the JavaScript file -->
+    <script type="module">
+        import { createTable } from 'https://dharmikvadher55.github.io/app/colordynamic/script.js'; 
+
+        document.getElementById('convertButton').addEventListener('click', function() {
+            const textArea = document.getElementById('textArea');
+            const output = document.getElementById('output');
+            const jsonContainer = document.getElementById('json-container');
+
+            // Clear previous output and error messages
+            output.textContent = '';
+            jsonContainer.innerHTML = '';
+
+            try {
+                // Parse the trimmed text from the textarea
+                const jsonObject = JSON.parse(textArea.value.trim());
+
+                // Create and append the table to the JSON container
+                createTable(jsonObject, jsonContainer, 'JSON Data');
+            } catch (error)
+             {
+                // Handle JSON parsing errors 
+                let Error = error.message;
+                output.textContent = "error:"+Error;
+            }
+        });
+    </script>
+</body>
+</html>
