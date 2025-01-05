@@ -1,57 +1,6 @@
 {
-  "default": {
-    "size": 20,
-    "rotation_speed": 2,
-    "acceleration": 0.5,
-    "max_speed": 5,
-    "friction": 0.95,
-    "fire_rate": 10,
-    "turret_size": 0.6,
-    "cannon_length": 1.5,
-    "cannon_width": 5,
-    "magazine_size": 10,
-    "reload_time": 60
-  },
+ 
   "speedy": {
-    "size": 18,
-    "rotation_speed": 3,
-    "acceleration": 0.7,
-    "max_speed": 7,
-    "friction": 0.9,
-    "fire_rate": 8,
-    "turret_size": 0.5,
-    "cannon_length": 1.8,
-    "cannon_width": 4,
-    "magazine_size": 12,
-    "reload_time": 50
-  },
-  "heavy": {
-    "size": 25,
-    "rotation_speed": 1.5,
-    "acceleration": 0.3,
-    "max_speed": 4,
-    "friction": 0.93,
-    "fire_rate": 15,
-    "turret_size": 0.7,
-    "cannon_length": 1.3,
-    "cannon_width": 7,
-    "magazine_size": 8,
-    "reload_time": 80
-  },
-  "sniper": {
-    "size": 20,
-    "rotation_speed": 2,
-    "acceleration": 0.2,
-    "max_speed": 3,
-    "friction": 0.95,
-    "fire_rate": 30,
-    "turret_size": 0.6,
-    "cannon_length": 1.5,
-    "cannon_width": 4,
-    "magazine_size": 5,
-    "reload_time": 120
-  },
-  "tank": {
     "size": 22,
     "rotation_speed": 1.8,
     "acceleration": 0.4,
@@ -63,18 +12,5 @@
     "cannon_width": 6,
     "magazine_size": 9,
     "reload_time": 70
-  },
-  "scout": {
-    "size": 17,
-    "rotation_speed": 3.2,
-    "acceleration": 0.8,
-    "max_speed": 8,
-    "friction": 0.88,
-    "fire_rate": 9,
-    "turret_size": 0.4,
-    "cannon_length": 1.6,
-    "cannon_width": 3.5,
-    "magazine_size": 15,
-    "reload_time": 40
   }
 }
